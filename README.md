@@ -1,2 +1,10 @@
-# sudoku-c-project
-C Major Project
+# Sudoku-C-Project
+
+PROJECT DESCRIPTION-
+This program is a C-based implementation of a Sudoku solver designed to automatically complete a standard 9×9 Sudoku puzzle. The Sudoku grid is represented as a two-dimensional integer array, where empty cells are denoted by the value 0. The primary objective of the program is to fill these empty cells with numbers from 1 to 9 in such a way that all Sudoku rules are satisfied: each number must appear exactly once in every row, every column, and each 3×3 subgrid.
+The core of the program is built around the backtracking algorithm, a recursive problem-solving technique widely used for handling constraint-satisfaction problems. The algorithm searches for an empty cell and attempts to place digits from 1 to 9 one by one. For each attempted digit, the program performs safety checks using dedicated functions. These checks ensure that the chosen number does not violate Sudoku constraints in the corresponding row, column, or subgrid. If a number is safe, the program places it and recursively continues to solve the remaining puzzle. If the chosen number later leads to a dead end, the algorithm backtracks by resetting the cell to 0 and trying the next possible number.
+The program is modular, with functions such as findEmpty, safeRow, safeCol, safeBox, isSafe, and solve, each performing a specific task to maintain clarity and structure. Once the puzzle is successfully solved, the printGrid function displays the completed Sudoku grid.
+Overall, this program demonstrates effective use of recursion, logical reasoning, array manipulation, and algorithmic thinking. It provides an efficient method for solving Sudoku puzzles without manual intervention and showcases how backtracking can be applied to systematically explore and resolve complex logical problems in programming.
+
+Instructions 
+This Sudoku Solver program is designed to automatically solve any valid 9×9 Sudoku puzzle using the C programming language. The program operates based on a backtracking algorithm and requires the user to provide the puzzle in a two-dimensional array format. To use this program effectively, follow the instructions below.
